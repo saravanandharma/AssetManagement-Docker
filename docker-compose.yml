@@ -1,0 +1,9 @@
+version: '1'
+
+services:
+  assetmgmtservice:
+    image: assetmgmt-h2/assetmgmt-service:0.0.1-SNAPSHOT
+    ports:
+      - "8081:8081"
+    environment:
+      - "SPRING_PROFILE_ACTIVE=dev"
